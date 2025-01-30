@@ -1,7 +1,7 @@
 import React from "react";
 import mongoDB from "/mongodb.jpg";
 import reactjs from "/reactjs.png";
-import express from "/express.png";
+import Universe from "/Bennett.webp";
 import youtube from "/youtube.png"
 import amazon from "/amazon.png"
 import js from "/js.jpeg"
@@ -10,6 +10,29 @@ function PortFolio() {
   const cardItem = [
     {
       id: 1,
+      logo: Universe,
+      name: "Universe",
+      description: "eveloped a responsive college website with intuitive navigation using React.",
+      url: "https://universe-gules.vercel.app/",
+      sourceCode: "https://github.com/Shivank0101/Universe",
+
+
+      
+      
+    },
+    {
+      id: 2,
+      logo: reactjs,
+      name: "This Portfolio",
+      description: "Designed and developed a responsive portfolio website using React.js and Tailwind.",
+      url: "https://portfolio-shivank0101s-projects.vercel.app/",
+      sourceCode: "https://github.com/Shivank0101/Portfolio",
+      
+    },
+    {
+      
+
+      id: 3,
       logo: mongoDB,
       name: "Snooker Club",
       description: "A web app for managing a snooker club's events and memberships.",
@@ -17,31 +40,7 @@ function PortFolio() {
       sourceCode: "https://github.com/Shivank0101/snookerclub/tree/master",
     },
     {
-      id: 2,
-      logo: js,
-      name: "Modern Landing Page",
-      description: "A sleek and responsive landing page for a startup.",
-      url: "https://shivank0101.github.io/Modern-Landing-Page/",
-      sourceCode: "https://github.com/Shivank0101/Modern-Landing-Page",
-    },
-    {
-      id: 3,
-      logo: reactjs,
-      name: "This Portfolio",
-      description: "Designed and developed a responsive portfolio website using React.js and Tailwind.",
-      url: "https://your-youtube-clone-url.com",
-      sourceCode: "https://github.com/your-username/youtube-clone",
-    },
-    {
       id: 4,
-      logo: reactjs,
-      name: "Thisty",
-      description: "Modern landing page using React.js.",
-      url: "https://your-amazon-clone-url.com",
-      sourceCode: "https://github.com/your-username/amazon-clone",
-    },
-    {
-      id: 5,
       logo: youtube,
       name: "Youtube Clone",
       description: "Youtube clone inspired by Youtube",
@@ -49,10 +48,19 @@ function PortFolio() {
       sourceCode: "https://github.com/Shivank0101/YouTube_Clone",
     },
     {
+      
+      id: 5,
+      logo: js,
+      name: "Modern Landing Page",
+      description: "A sleek and responsive landing page for a startup.",
+      url: "https://shivank0101.github.io/Modern-Landing-Page/",
+      sourceCode: "https://github.com/Shivank0101/Modern-Landing-Page",
+    },
+    {
       id: 6,
       logo: amazon,
       name: "Amazon Clone",
-      description: "An e-commerce platform inspired by Amazon.",
+      description: "Home page of Amazon by using basic HTML and CSS.",
       url: "https://shivank0101.github.io/Amazon-Clone/",
       sourceCode: "https://github.com/Shivank0101/Amazon-Clone",
     },
