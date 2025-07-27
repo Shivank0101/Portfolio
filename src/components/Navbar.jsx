@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import pic from "/photo.jpg";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
-import { Link } from "react-scroll";
+import { Link } from "react-scroll"; //For smooth scrolling between sections
 function Navbar() {
   const [menu, setMenu] = useState(false);
   const navItems = [
@@ -50,8 +50,8 @@ function Navbar() {
                     to={text}
                     smooth={true}
                     duration={500}
-                    offset={-70}
-                    activeClass="active"
+                    offset={-70} //-70 moves the scroll up by 70px (like giving space from the top).
+                    activeClass="active" //Automatically adds the class "active" to the link when the section is currently in view.
                   >
                     {text}
                   </Link>

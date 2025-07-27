@@ -1,12 +1,12 @@
-import axios from 'axios'
+import axios from 'axios' //to send HTTP Post request
 import React from 'react'
 import { useForm } from "react-hook-form"
-import toast from 'react-hot-toast'
+import toast from 'react-hot-toast' // to display tost notification
 
 const Contact = () => {
     const {
-        register,
-        handleSubmit,
+        register, //Connect inputs to form state
+        handleSubmit, //Validates and handles form submission
         formState: { errors },
         reset  // Add reset here
     } = useForm()
