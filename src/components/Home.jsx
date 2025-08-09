@@ -1,18 +1,16 @@
-import React from 'react'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
-
 import { ReactTyped } from "react-typed";  // for animation in CODER<DEVELOPER< PROGRAMMER
 
 function Home  ()  {
     return (
       <>
           <div  name="Home"
-          className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-28'>
+            className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-28'>
               <div className='flex flex-col md:flex-row'>
                   <div className='md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1'>
                           <span className='text-2xl'>Welcome In My Feed</span>       

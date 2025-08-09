@@ -6,7 +6,7 @@ import Portfolio from './components/Portfolio'
 import Experiance from './components/Experience'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
-import {Toaster} from "react-hot-toast"
+import {Toaster} from "react-hot-toast"  // used for toast notifications
 
 function App()  {
   return (

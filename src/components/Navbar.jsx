@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import pic from "/photo.jpg";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
@@ -29,23 +29,20 @@ function Navbar() {
   ];
   return (
     <>
- <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#1f1c2c] via-[#928DAB] to-[#1f1c2c] bg-opacity-70 backdrop-blur-lg border-b border-purple-500/30 shadow-md rounded-b-xl">
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#1f1c2c] via-[#928DAB] to-[#1f1c2c] bg-opacity-70 backdrop-blur-lg border-b border-purple-500/30 shadow-md rounded-b-xl">
+        <div className="flex justify-between items-center h-16">
 
+          {/* 🚀 Left - Logo & Name */}
+          <div className="flex items-center space-x-3">
+            <img src={pic} className="h-12 w-12 rounded-full shadow-md border-2 border-white/20" alt="logo" />
 
-
-
-    <div className="flex justify-between items-center h-16">
-
-      {/* 🚀 Left - Logo & Name */}
-      <div className="flex items-center space-x-3">
-        <img src={pic} className="h-12 w-12 rounded-full shadow-md border-2 border-white/20" alt="logo" />
-        <div>
-          <h1 className="font-bold text-lg md:text-xl text-white tracking-wide">
-  Shivan<span className="text-purple-400 text-2xl">k</span>
-</h1>
-          <p className="text-xs text-gray-300">Web Developer</p>
-        </div>
-      </div>
+            <div>
+              <h1 className="font-bold text-lg md:text-xl text-white tracking-wide">
+              Shivan<span className="text-purple-400 text-2xl">k</span>
+              </h1>
+              <p className="text-xs text-gray-300">Web Developer</p>
+            </div>
+          </div>
 
       {/* 🖥 Desktop Navigation */}
       <div className="hidden md:flex space-x-8 items-center">
@@ -53,15 +50,13 @@ function Navbar() {
           <li
             key={id}
            className="list-none font-medium text-white hover:text-purple-300 hover:scale-110 transition-transform duration-300 cursor-pointer"
-
-
           >
             <Link
-              to={text}
-              smooth={true}
-              duration={500}
-              offset={-70}
-              activeClass="active"
+              to={text}  //Us section ke id ke naam pe scroll karega (e.g., "Home" → id="Home" section).
+              smooth={true} //Scroll smoothly karega.
+              duration={500} //0.5 seconds me scroll complete hoga.
+              offset={-70}  //Navbar ki height adjust karne ke liye thoda upar se offset deta hai.
+              activeClass="active"  // for active styling
             >
               {text}
             </Link>
@@ -73,6 +68,7 @@ function Navbar() {
       <div onClick={() => setMenu(!menu)} className="md:hidden text-white cursor-pointer">
         {menu ? <IoCloseSharp size={28} /> : <AiOutlineMenu size={28} />}
       </div>
+      
     </div>
 
     {/* 📱 Mobile Menu */}
@@ -84,8 +80,6 @@ function Navbar() {
             <li
               key={id}
              className="hover:text-purple-300 hover:scale-105 transition-transform duration-200 cursor-pointer"
-
-
             >
               <Link
                 onClick={() => setMenu(!menu)}
@@ -104,7 +98,6 @@ function Navbar() {
     )}
   </div>
 </>
-
 
   );
 }

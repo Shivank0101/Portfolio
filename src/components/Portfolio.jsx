@@ -1,4 +1,3 @@
-import React from "react";
 import mongoDB from "/mongodb.jpg";
 import reactjs from "/reactjs.png";
 import Universe from "/Bennett.webp";
@@ -14,11 +13,7 @@ function PortFolio() {
       name: "Unisphere",
       description: "A campus-focused event management system enabling students and faculty to create, manage, and register for university events, club activities, and workshops.",
       url: "https://unisphere-frontend.onrender.com/",
-      sourceCode: "https://github.com/Shivank0101/Unisphere-new",
-
-
-      
-      
+      sourceCode: "https://github.com/Shivank0101/Unisphere-new",  
     },
     {
       id: 2,
@@ -26,11 +21,7 @@ function PortFolio() {
       name: "Universe",
       description: "Developed a responsive college website with intuitive navigation using React.",
       url: "https://universe-gules.vercel.app/",
-      sourceCode: "https://github.com/Shivank0101/Universe",
-
-
-      
-      
+      sourceCode: "https://github.com/Shivank0101/Universe",  
     },
     {
       id: 3,
@@ -38,12 +29,9 @@ function PortFolio() {
       name: "This Portfolio",
       description: "Designed and developed a responsive portfolio website using React.js and Tailwind.",
       url: "https://portfolio-shivank0101s-projects.vercel.app/",
-      sourceCode: "https://github.com/Shivank0101/Portfolio",
-      
+      sourceCode: "https://github.com/Shivank0101/Portfolio",  
     },
     {
-      
-
       id: 4,
       logo: mongoDB,
       name: "Snooker Club",
@@ -59,8 +47,7 @@ function PortFolio() {
       url: "https://shivank0101.github.io/YouTube_Clone/",
       sourceCode: "https://github.com/Shivank0101/YouTube_Clone",
     },
-    {
-      
+    {      
       id: 6,
       logo: js,
       name: "Modern Landing Page",
@@ -80,9 +67,9 @@ function PortFolio() {
 
   return (
      <div
-      name="Portfolio"
+      name="Portfolio"  //We use name="Portfolio" in that <div> so that react-scroll can find this exact section when the Navbar’s <Link to="Portfolio"> is clicked, enabling smooth scrolling to it.
       className="max-w-screen-2xl container mx-auto px-5 py-20 text-white"
-    >
+      >
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold border-b-4 border-purple-500 inline-block pb-2">
           Projects
@@ -106,9 +93,9 @@ function PortFolio() {
               <p className="text-gray-300 text-sm">{description}</p>
               <div className="flex gap-4 mt-6">
                 <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={url}   // Specifies the destination URL for the hyperlink
+                  target="_blank"  // Opens the linked document in a new browser tab or window.
+                  rel="noopener noreferrer"  // Security ke liye, taaki nayi tab apki site ko access na kar sake.
                   className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white font-medium shadow-md hover:scale-105 transition-transform"
                 >
                   Live
